@@ -1,0 +1,28 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+
+const questions = [
+    {
+        type: 'input',
+        name: 'text',
+        message: 'Enter up to three characters:',
+    },
+    {
+        type: 'input',
+        name: 'textColor',
+    },
+    {
+        type: 'list',
+        name: 'shape',
+        message: 'Choose a shape:',
+    },
+    {
+        type: 'input',
+        name: 'shapeColor',
+        message: 'Enter the shape\'s color (color keyword or hexadecimal number):'
+    }
+];
+
+inquirer.prompt(questions).then(answers => {
+    console.log('Generated logo.svg');
+});
