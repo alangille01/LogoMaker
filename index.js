@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+// https://www.npmjs.com/package/validate-color
+var validateColor = require("validate-color").default;
+
 
 const questions = [
     {
@@ -11,6 +14,7 @@ const questions = [
     {
         type: 'input',
         name: 'textColor',
+        validate: input => validateColor(input) ? true : "Invalid text colour chosen"
     },
     {
         type: 'list',
@@ -21,7 +25,8 @@ const questions = [
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'Enter the shape\'s color (color keyword or hexadecimal number):'
+        message: 'Enter the shape\'s color (color keyword or hexadecimal number):',
+        validate: input => validateColor(input) ? true : "Invalid colour chosen"
     }
 ];
 
