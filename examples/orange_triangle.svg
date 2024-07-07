@@ -1,0 +1,5 @@
+
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="150,25 250,175 50,175" fill="orange" />
+        <text x="150" y="115" font-size="40" text-anchor="middle" fill="pink">wer</text>
+    </svg>
