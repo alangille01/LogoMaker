@@ -17,4 +17,4 @@ There is input validation already done at each stage to ensusre that:
 
 ![green_triangle](https://github.com/alangille01/LogoMaker/assets/166338216/0af8b33c-824d-417c-8243-af7d236de04d)
 
-[INSERT DEMO VIDEO HERE]
+DEMO LINK: https://drive.google.com/file/d/1-DPdCM6PuwyGb8GJ2mC_Kgut9edK2W91/view
